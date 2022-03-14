@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>effect</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#btn").click(function (){
+                if($(this).text()=="Show"){            //this ="#btn"
+                    $(this).text("Hide");             //text() = html()
+                     $("img").show();
+                }
+                else{
+
+                $(this).text("Show");
+                $("img").hide();
+                }
+             });
+        });
+    </script>
+    <style>
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Show</button><br/>
+    <img src="mithu.jpg" alt="" height="300px" width="300px"/>
+   
+</body>
+</html>
